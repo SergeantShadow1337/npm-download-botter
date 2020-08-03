@@ -17,8 +17,8 @@ function botter() {
         }, (err, res, body) => {
             if (err) return;
             botted++
-            process.title = `NPM Download Botter | ${botted} downloads added.`
-            console.log(chalk.green(`[+1] download added`))
+            process.title = `NPM Download Botter | ${botted} downloads added.`;
+            console.log(chalk.green(`[+1] download added`));
         })
     }
 }
