@@ -1,6 +1,6 @@
 const request = require("request");
 const fs = require("fs");
-const chalk = require("chalk")
+const chalk = require("chalk");
 const proxy = fs.readFileSync("./proxy.txt", "utf-8").split("\n");
 const proxyAgent = require("proxy-agent");
 
@@ -16,7 +16,7 @@ function botter() {
     }, (err, res, body) => {
         if (err) return;
         botted++
-        process.title = `NPM Download Botter | ${botted} downloads added.`
-        console.log(chalk.green(`[+1] download added`))
+        process.title = `NPM Download Botter | ${botted} downloads added.`;
+        console.log(chalk.green(`[+1] download added`));
     })
 }
