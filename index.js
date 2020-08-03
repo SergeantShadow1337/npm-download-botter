@@ -1,5 +1,5 @@
 // Heart of this script, we are using this module to send requests to the download link of our package.
-const request = require("request")
+const request = require("request");
 
 // Resetting the counter since we are starting the script again.
 var botted = 0;
